@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kir"
+    tools:context="com.example.nisa.meyvesepeti.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/apple_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="272dp"
+        android:layout_marginRight="272dp"
+        android:layout_marginTop="386dp"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/orange_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/apple_image"
+        android:layout_marginTop="55dp"
+        app:srcCompat="@drawable/orange" />
+
+    <ImageView
+        android:id="@+id/pear_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/orange_image"
+        android:layout_marginLeft="277dp"
+        android:layout_marginStart="277dp"
+        app:srcCompat="@drawable/pearr" />
+
+    <Button
+        android:id="@+id/apple_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+        android:layout_alignEnd="@+id/apple_down"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignTop="@+id/pear_up"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/apple_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/orange_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/orange_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/apple_up"
+        android:layout_alignBottom="@+id/apple_up"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/orange_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/orange_up"
+        android:layout_alignRight="@+id/orange_up"
+        android:layout_alignTop="@+id/apple_down"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/pear_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/orange_down"
+        android:layout_alignLeft="@+id/pear_image"
+        android:layout_alignStart="@+id/pear_image"
+        android:backgroundTint="#ffff00"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/pear_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pear_up"
+        android:layout_alignStart="@+id/pear_up"
+        android:layout_below="@+id/pear_up"
+        android:backgroundTint="#ffff00"
+        android:text="-" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/orange_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="113dp"
+        app:srcCompat="@drawable/sepettt" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pear_up"
+        android:layout_marginBottom="55dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/orange_up"
+        android:layout_toRightOf="@+id/orange_up"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/goster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Kaç meyve var" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/apple_down"
+        android:layout_alignRight="@+id/apple_down"
+        android:layout_below="@+id/orange_image"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/pear_down"
+        android:layout_alignRight="@+id/pear_down"
+        android:layout_below="@+id/orange_image"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/orange" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginTop="22dp"
+        app:srcCompat="@drawable/pearr" />
+
+
+</android.widget.RelativeLayout>
